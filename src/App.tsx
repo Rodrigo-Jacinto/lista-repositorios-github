@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Dasboard } from "./components/Dashboard";
 import { Header } from "./components/Header";
-import { TransactionModal } from "./components/TransactionModal";
+import { SearchModal } from "./components/SearchModal";
 import { ReposListCompanyProvider } from "./hooks/useRepos";
 import { GlobalStyle } from "./styles/global";
 
@@ -21,7 +21,7 @@ export function App() {
       <GlobalStyle />
       <Header modalOpen={openModal} />
       <Dasboard />
-      <TransactionModal status={statusModal} closeModal={closeModal} />
+      <SearchModal status={statusModal} closeModal={closeModal} />
     </ReposListCompanyProvider>
   );
 }

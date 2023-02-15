@@ -8,7 +8,7 @@ interface TransactionModalProps {
   closeModal: () => void;
 }
 
-export function TransactionModal(props: TransactionModalProps) {
+export function SearchModal(props: TransactionModalProps) {
   const [search, setSearch] = useState("");
   const [repoMessage, setRepoMessage] = useState(false);
   const { searchRepos } = useRepos();
